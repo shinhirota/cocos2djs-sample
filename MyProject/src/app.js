@@ -64,6 +64,15 @@ var HelloWorldLayer = cc.Layer.extend({
                 cc.tintTo(2.5,255,125,0)
             )
         );
+
+        // キャシーのスプライト追加
+        var sprCathyTest = new cc.Sprite(res.CathyTest_png);
+        sprCathyTest.attr({
+            x: 200,
+            y: 200
+        });
+        this.addChild(sprCathyTest, 10);
+
         return true;
     }
 });
