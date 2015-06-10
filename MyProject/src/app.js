@@ -73,6 +73,14 @@ var HelloWorldLayer = cc.Layer.extend({
         });
         this.addChild(sprCathyTest, 10);
 
+        // ラベル表示
+        var lblTest = new cc.LabelTTF("ねずみハンター", null, 40);
+        lblTest.attr({
+            x: 200,
+            y: 300
+        });
+        this.addChild(lblTest, 11);
+
         return true;
     }
 });
